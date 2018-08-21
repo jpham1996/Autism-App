@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#DCDCDC"
+    android:padding="5dp"
+    android:layout_gravity="center" >
+
+    <GridLayout
+        android:id="@+id/gl_image_buttons_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numColumns="auto_fit"
+        android:columnCount="3" >
+
+        <ImageButton
+            android:id="@+id/ib_superhero"
+            android:layout_width="220dip"
+            android:layout_height="180dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sb_default_superhero"
+            android:contentDescription="@string/element" />
+
+        <ImageButton
+            android:id="@+id/ib_barbie"
+            android:layout_width="220dip"
+            android:layout_height="180dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sb_default_barbie"
+            android:contentDescription="@string/element" />
+
+        <ImageButton
+            android:id="@+id/ib_toy_train"
+            android:layout_width="220dip"
+            android:layout_height="180dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sb_default_toy_train"
+            android:contentDescription="@string/element" />
+
+        <ImageButton
+            android:id="@+id/ib_play_doh"
+            android:layout_width="220dip"
+            android:layout_height="180dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sb_default_play_doh"
+            android:contentDescription="@string/element" />
+
+    </GridLayout>
+
+</ScrollView>

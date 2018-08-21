@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#DCDCDC"
+    android:padding="5dp"
+    android:layout_gravity="center" >
+
+    <GridLayout
+        android:id="@+id/gl_image_buttons_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numColumns="auto_fit"
+        android:columnCount="3" >
+
+        <ImageButton
+            android:id="@+id/ib_sandwich"
+            android:layout_width="120dip"
+            android:layout_height="120dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sb_default_sandwich"
+            android:contentDescription="@string/element" />
+
+        <ImageButton
+            android:id="@+id/ib_salad"
+            android:layout_width="120dip"
+            android:layout_height="120dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sb_default_salad"
+            android:contentDescription="@string/element" />
+
+        <ImageButton
+            android:id="@+id/ib_rice"
+            android:layout_width="120dip"
+            android:layout_height="120dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sb_default_rice"
+            android:contentDescription="@string/element" />
+
+        <ImageButton
+            android:id="@+id/ib_noodle"
+            android:layout_width="120dip"
+            android:layout_height="120dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sb_default_noodle"
+            android:contentDescription="@string/element" />
+
+    </GridLayout>
+
+</ScrollView>

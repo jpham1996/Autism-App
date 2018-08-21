@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_landscape"
+    android:padding="16dp"
+    tools:context="edu.wit.mobileapp.autismapp.Quiz_Starting_Screen">
+
+    <TextView
+        android:id="@+id/tv_choose_the_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="@string/sc_tv1"
+        android:textColor="@android:color/black"
+        android:textSize="70sp" />
+
+    <ImageView
+        android:id="@+id/iv_quiz_title"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_choose_the_picture"
+        android:src="@drawable/quiz_starting_screen"
+        android:contentDescription="@string/sc_tv1" />
+
+    <TextView
+        android:id="@+id/tv_highscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/iv_quiz_title"
+        android:text="@string/sc_tv2"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/b_start_quiz"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/tv_highscore"
+        android:text="@string/sc_b1"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/b_go_back"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b_start_quiz"
+        android:layout_centerInParent="true"
+        android:text="@string/sc_b2"
+        android:textSize="40sp" />
+
+</RelativeLayout>

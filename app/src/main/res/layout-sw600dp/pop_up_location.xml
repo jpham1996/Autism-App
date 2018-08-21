@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#DCDCDC"
+    android:padding="5dp"
+    android:layout_gravity="center" >
+
+    <GridLayout
+        android:id="@+id/gl_image_buttons_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numColumns="auto_fit"
+        android:columnCount="3" >
+
+        <ImageButton
+            android:id="@+id/ib_home"
+            android:layout_width="220dip"
+            android:layout_height="180dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sb_default_home"
+            android:contentDescription="@string/element" />
+
+        <ImageButton
+            android:id="@+id/ib_school"
+            android:layout_width="220dip"
+            android:layout_height="180dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sb_default_school"
+            android:contentDescription="@string/element" />
+
+        <ImageButton
+            android:id="@+id/ib_museum"
+            android:layout_width="220dip"
+            android:layout_height="180dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sb_default_museum"
+            android:contentDescription="@string/element" />
+
+        <ImageButton
+            android:id="@+id/ib_park"
+            android:layout_width="220dip"
+            android:layout_height="180dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sb_default_park"
+            android:contentDescription="@string/element" />
+
+        <ImageButton
+            android:id="@+id/ib_zoo"
+            android:layout_width="220dip"
+            android:layout_height="180dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sb_default_zoo"
+            android:contentDescription="@string/element" />
+
+    </GridLayout>
+
+</ScrollView>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_landscape"
+    android:padding="16dp"
+    tools:context=".Sentence_Building" >
+
+    <LinearLayout
+        android:id="@+id/ll_top_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_sentence"
+            android:layout_width="750dp"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:maxLines="1"
+            android:textSize="30sp"
+            android:background="#FFFFFF" />
+        <Button
+            android:id="@+id/b_speak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sb_b1"
+            android:textSize="30sp" />
+        <Button
+            android:id="@+id/b_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sb_b2"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sv_image_buttons_1"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="500dp"
+        android:fillViewport="true"
+        android:layout_below="@id/ll_top_bar" >
+
+        <GridLayout
+            android:id="@+id/gl_image_buttons_1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:numColumns="auto_fit"
+            android:columnCount="6" >
+
+            <!-- There is a better method, currently doing research -->
+
+            <ImageButton
+                android:id="@+id/ib_i"
+                android:layout_width="160dip"
+                android:layout_height="160dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sb_default_i"
+                android:contentDescription="@string/element" />
+
+            <ImageButton
+                android:id="@+id/ib_dont"
+                android:layout_width="160dip"
+                android:layout_height="160dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sb_default_dont"
+                android:contentDescription="@string/element" />
+
+            <ImageButton
+                android:id="@+id/ib_want"
+                android:layout_width="160dip"
+                android:layout_height="160dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sb_default_want"
+                android:contentDescription="@string/element" />
+
+            <ImageButton
+                android:id="@+id/ib_to"
+                android:layout_width="160dip"
+                android:layout_height="160dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sb_default_to"
+                android:contentDescription="@string/element" />
+
+            <!--
+            <ImageButton
+                android:id="@+id/ib_the"
+                android:layout_width="150dip"
+                android:layout_height="150dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sb_default_the"
+                android:contentDescription="@string/element" />
+            -->
+
+            <ImageButton
+                android:id="@+id/ib_category_food"
+                android:onClick="PopUpFood"
+                android:layout_width="160dip"
+                android:layout_height="160dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/category_food"
+                android:contentDescription="@string/element" />
+
+            <ImageButton
+                android:id="@+id/ib_category_drink"
+                android:onClick="PopUpDrink"
+                android:layout_width="160dip"
+                android:layout_height="160dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/category_drink"
+                android:contentDescription="@string/element" />
+
+            <ImageButton
+                android:id="@+id/ib_eat"
+                android:layout_width="160dip"
+                android:layout_height="160dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sb_default_eat"
+                android:contentDescription="@string/element" />
+
+            <ImageButton
+                android:id="@+id/ib_drink"
+                android:layout_width="160dip"
+                android:layout_height="160dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sb_default_drink"
+                android:contentDescription="@string/element" />
+
+            <ImageButton
+                android:id="@+id/ib_play"
+                android:layout_width="160dip"
+                android:layout_height="160dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sb_default_play"
+                android:contentDescription="@string/element" />
+
+            <ImageButton
+                android:id="@+id/ib_go"
+                android:layout_width="160dip"
+                android:layout_height="160dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sb_default_go"
+                android:contentDescription="@string/element" />
+
+            <ImageButton
+                android:id="@+id/ib_category_sport"
+                android:onClick="PopUpSport"
+                android:layout_width="160dip"
+                android:layout_height="160dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/category_sport"
+                android:contentDescription="@string/element" />
+
+            <ImageButton
+                android:id="@+id/ib_category_toy"
+                android:onClick="PopUpToy"
+                android:layout_width="160dip"
+                android:layout_height="160dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/category_toy"
+                android:contentDescription="@string/element" />
+
+            <ImageButton
+                android:id="@+id/ib_yes"
+                android:layout_width="160dip"
+                android:layout_height="160dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sb_default_yes"
+                android:contentDescription="@string/element" />
+
+            <ImageButton
+                android:id="@+id/ib_no"
+                android:layout_width="160dip"
+                android:layout_height="160dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sb_default_no"
+                android:contentDescription="@string/element" />
+
+            <ImageButton
+                android:id="@+id/ib_with"
+                android:layout_width="160dip"
+                android:layout_height="160dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sb_default_with"
+                android:contentDescription="@string/element" />
+
+            <ImageButton
+                android:id="@+id/ib_people"
+                android:onClick="PopUpPeople"
+                android:layout_width="160dip"
+                android:layout_height="160dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sb_default_people"
+                android:contentDescription="@string/element" />
+
+            <ImageButton
+                android:id="@+id/ib_category_location"
+                android:onClick="PopUpLocation"
+                android:layout_width="160dip"
+                android:layout_height="160dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/category_location"
+                android:contentDescription="@string/element" />
+
+            <ImageButton
+                android:id="@+id/ib_category_other"
+                android:onClick="PopUpOther"
+                android:layout_width="160dip"
+                android:layout_height="160dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/category_other"
+                android:contentDescription="@string/element" />
+
+            <!-- Ignore, alternative method, not working at all.
+            <FrameLayout
+                android:id="@+id/fl_i"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/b_i"
+                    android:layout_width="150dip"
+                    android:layout_height="150dip"
+                    android:text="@string/sb_b_i"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_i"
+                    android:layout_width="150dip"
+                    android:layout_height="150dip"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/sb_default_i"
+                    android:contentDescription="@string/element"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:clickable="false" />
+
+            </FrameLayout>
+            -->
+        </GridLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true" >
+
+        <GridLayout
+            android:id="@+id/gl_seek_bars_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numColumns="auto_fit"
+            android:columnCount="1" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sb_tv1"
+                android:textSize="20sp" />
+            <SeekBar
+                android:id="@+id/sb_pitch"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:progress="50" />
+        </GridLayout>
+
+        <GridLayout
+            android:id="@+id/gl_seek_bars_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numColumns="auto_fit"
+            android:columnCount="1" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sb_tv2"
+                android:textSize="20sp" />
+            <SeekBar
+                android:id="@+id/sb_speed"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:progress="50" />
+        </GridLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/b_go_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sb_b3"
+        android:textSize="30sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

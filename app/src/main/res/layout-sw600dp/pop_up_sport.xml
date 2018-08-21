@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#DCDCDC"
+    android:padding="5dp"
+    android:layout_gravity="center" >
+
+    <GridLayout
+        android:id="@+id/gl_image_buttons_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numColumns="auto_fit"
+        android:columnCount="3" >
+
+        <ImageButton
+            android:id="@+id/ib_run"
+            android:layout_width="220dip"
+            android:layout_height="180dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sb_default_run"
+            android:contentDescription="@string/element" />
+
+        <ImageButton
+            android:id="@+id/ib_swim"
+            android:layout_width="220dip"
+            android:layout_height="180dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sb_default_swim"
+            android:contentDescription="@string/element" />
+
+        <ImageButton
+            android:id="@+id/ib_tennis"
+            android:layout_width="220dip"
+            android:layout_height="180dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sb_default_tennis"
+            android:contentDescription="@string/element" />
+
+        <ImageButton
+            android:id="@+id/ib_basketball"
+            android:layout_width="220dip"
+            android:layout_height="180dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sb_default_basketball"
+            android:contentDescription="@string/element" />
+
+        <ImageButton
+            android:id="@+id/ib_soccer"
+            android:layout_width="220dip"
+            android:layout_height="180dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sb_default_soccer"
+            android:contentDescription="@string/element" />
+
+        <ImageButton
+            android:id="@+id/ib_baseball"
+            android:layout_width="220dip"
+            android:layout_height="180dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sb_default_baseball"
+            android:contentDescription="@string/element" />
+
+    </GridLayout>
+
+</ScrollView>

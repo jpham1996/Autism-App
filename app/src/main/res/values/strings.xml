@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Autism App</string>
+
+    <!-- activity_main_screen -->
+    <string name="ms_iv1">ChattyChild</string>
+    <string name="ms_b1">Sentence Building</string>
+    <string name="ms_b2">Quiz</string>
+    <string name="ms_b3">Quit</string>
+    <string name="ms_b4">Credits</string>
+
+    <!-- activity_sentence_building -->
+    <string name="sb_b1">Speak</string>
+    <string name="sb_b2">Reset</string>
+    <string name="sb_b3">Return</string>
+    <string name="element">Word</string>
+    <string name="sb_tv1">Pitch</string>
+    <string name="sb_tv2">Speed</string>
+    <!-- currently not using -->
+    <string name="sb_b_i">I</string>
+    <string name="sb_b_want">want</string>
+    <string name="sb_b_to">to</string>
+    <string name="sb_b_the">to</string>
+
+    <!-- activity_quiz_starting_screen -->
+    <string name="sc_tv1">Choose the Picture</string>
+    <string name="sc_iv1">Choose the Picture</string>
+    <string name="sc_tv2">Highscore:  0</string>
+    <string name="sc_b1">Start Quiz</string>
+    <string name="sc_b2">Return</string>
+
+    <!-- activity_quiz_choose_the_picture -->
+    <!-- previously known as:  activity_quiz_complete_the_sentence -->
+    <string name="cts_tv1">Score:  0</string>
+    <string name="cts_tv2">Question:  1/x</string>
+    <string name="cts_tv3">60</string>
+    <string name="cts_tv4">Park</string>
+    <string name="cts_tv5">Correct</string>
+    <string name="cts_rb1">A</string>
+    <string name="cts_rb2">B</string>
+    <string name="cts_rb3">C</string>
+    <string name="cts_rb4">D</string>
+    <string name="cts_iv1">Option 1</string>
+    <string name="cts_iv2">Option 2</string>
+    <string name="cts_iv3">Option 3</string>
+    <string name="cts_iv4">Option 4</string>
+    <string name="cts_b1">Listen</string>
+    <string name="cts_b2">Next</string>
+    <string name="cts_b3">Quit</string>
+
+    <!-- activity_credits -->
+    <string name="c_tv1">Many images are taken from Google Images, credits to the unknown image uploaders.  </string>
+    <string name="c_b1">Return</string>
+
+</resources>

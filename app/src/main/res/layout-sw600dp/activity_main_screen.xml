@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_landscape"
+    android:padding="10dp"
+    tools:context=".Main_Screen">
+
+    <ImageView
+        android:id="@+id/iv_main_screen_title"
+        android:layout_width="500dp"
+        android:layout_height="400dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/main_screen_title"
+        android:contentDescription="@string/ms_iv1" />
+
+    <Button
+        android:id="@+id/b_sentence_building"
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/iv_main_screen_title"
+        android:text="@string/ms_b1"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/b_quiz"
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/b_sentence_building"
+        android:text="@string/ms_b2"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/b_quit"
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/b_quiz"
+        android:onClick="exit_app"
+        android:text="@string/ms_b3"
+        android:textSize="40sp" />
+
+</RelativeLayout>
